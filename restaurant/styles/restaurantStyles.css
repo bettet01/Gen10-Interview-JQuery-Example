@@ -1,0 +1,21 @@
+header h1 {
+    font-family: 'Roboto Condensed', sans-serif; 
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
+a:active {
+    color: darkred;
+    text-decoration: none;
+}

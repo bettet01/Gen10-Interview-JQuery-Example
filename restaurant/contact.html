@@ -7,6 +7,7 @@
     .required {font-weight: bold;}
 </style>
 
+<script src="scripts/formValidation.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -38,16 +39,16 @@
         <form>
             <div class=" form-group required">
                 <label for="nameinput">Name</label>
-                <input class="form-control" type='text'></div>
+                <input id="name" class="form-control" type='text'></div>
             <div class="form-group" >
                 <label>Email</label>
-                <input class="form-control" type='email'></div>
+                <input id="email" class="form-control" type='email'></div>
             <div class=" form-group required">
                 <label>Phone</label>
-                <input class="form-control" type='text'></div>
+                <input id="phone" class="form-control" type='text'></div>
             <div class="form-group required">
                 <label>Reason for Inquiry</label>
-                <select class="form-control" name='dropdown'>
+                <select id="reason" class="form-control" name='dropdown'>
                 <option value="Catering">Catering</option>
                 <option value="Private Party">Private Party</option>
                 <option value="Feedback">Feedback</option>
@@ -55,7 +56,7 @@
             </select></div>
             <div class="form-group">
                 <label>Addtional Information</label>
-                <textarea class="form-control" name='info' rows="5"></textarea> </div>
+                <textarea id="info" class="form-control" name='info' rows="5"></textarea> </div>
             <div>
                 <label>Have you been to a Shoney's before? </label><br/>
                 <div class="form-check-inline"> 
@@ -86,7 +87,7 @@
                 </div>
             </div>
             <br/>
-            <button style="display:block; margin-right:auto; margin-left:auto;" type="button" class="btn btn-primary">Send Request</button>
+            <button onclick="Javascript:validate()" style="display:block; margin-right:auto; margin-left:auto;" type="button" class="btn btn-primary">Send Request</button>
         </form>
     </div>
     <footer>
